@@ -130,6 +130,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 1em 0;
     color: white; /* Colore del testo bianco */
+    font-weight: bold;
 }
 
 .bar-content {
@@ -142,6 +143,7 @@ nav ul li a:hover {
     justify-content: center; /* Centra gli elementi orizzontalmente */
     align-items: center;
     margin-top: 1em;
+    padding: 0 20px;
 }
 
 .text {
@@ -156,6 +158,7 @@ nav ul li a:hover {
 
 .image img {
     margin-top: 20px; /* Spazio sopra l'immagine */
+    margin-right: 20px
 }
 
 .service-bar {
@@ -209,17 +212,49 @@ nav ul li a:hover {
     font-size: 12px;
 }
 
-
-
 .footer {
-    background-color: #003366; /* Blu scuro principale */
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: relative; /* Modificato per mantenere il footer sempre visibile */
+    background-color: #232323; /* Colore tendente al grigio */
+    color: #fff; /* Colore del testo grigio scuro */
+    text-align: center; /* Centra il testo */
+    padding: 2em 0; /* Aggiunto padding sopra e sotto */
     width: 100%;
-    bottom: 0;
 }
+
+.footer .column {
+    display: inline-block; /* Rendi le colonne in linea */
+    width: 30%; /* Larghezza della colonna */
+    vertical-align: top; /* Allinea il contenuto in alto */
+}
+
+.footer h3 {
+    font-weight: bold; /* Rendi i titoli in grassetto */
+    color: #fff; /* Colore del testo grigio scuro */
+    margin-bottom: 10px; /* Aggiungi spazio sotto il titolo */
+}
+
+.footer p {
+    margin: 5px 0; /* Aggiungi spazio tra i paragrafi */
+}
+
+/* Aggiungi stili per le icone dei social */
+.footer .column p {
+    display: inline-block; /* Rendi le icone in linea */
+    margin-right: 10px; /* Aggiungi spazio tra le icone */
+}
+
+.footer .column a {
+    display: inline-block; /* Rendi le icone in linea */
+    margin-right: 10px; /* Aggiungi spazio tra le icone */
+    width: 30px; /* Imposta la larghezza dell'icona */
+    height: 30px; /* Imposta l'altezza dell'icona */
+}
+
+.footer .column a img {
+    width: 100%; /* Imposta la larghezza al 100% */
+    height: 100%; /* Imposta l'altezza al 100% */
+    object-fit: cover; /* Imposta l'immagine per coprire l'area dell'icona */
+}
+
 
 @media (max-width: 600px) {
     nav ul {
