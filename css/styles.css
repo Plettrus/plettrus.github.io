@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Aggiunto per un contrasto maggiore */
+    color: #333;
+}
+
+header {
+    background-color: #003366; /* Blu scuro principale */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Invertito a sinistra per separare gli elementi */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF0000; /* Rosso per hover */
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 80vh; /* Altezza limitata al 20% dell'altezza dello schermo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Sfondo nero per il contenitore dell'immagine */
+}
+
+.hero img {
+    width: 100%; /* Larghezza del 100% dell'elemento genitore */
+    height: 100%; /* Altezza del 100% dell'elemento genitore */
+    object-fit: cover; /* Riempi l'elemento mantenendo le proporzioni e tagliando l'eccesso */
+    max-height: 100vh; /* Altezza massima pari all'altezza della viewport */
+}
+
+.services-bar {
+    background-color: #003366; /* Blu scuro */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: bold;
+}
+
+.main-heading {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.content .column {
+    width: 45%;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap; /* Per consentire il wrapping delle immagini */
+    justify-content: flex-start; /* Allinea le immagini a sinistra */
+    margin-bottom: 1em;
+}
+
+.gallery-item {
+    width: calc(25% - 10px); /* Larghezza per contenere esattamente 4 immagini con margine tra loro */
+    margin-right: 10px; /* Aggiunto margine destro tra le immagini */
+    margin-bottom: 10px; /* Aggiunto margine inferiore tra le righe */
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item:last-child {
+    margin-right: 0; /* Rimuove il margine destro per l'ultimo elemento */
+}
+
+.gallery-item img {
+    width: 100%; /* Larghezza del 100% dell'elemento genitore */
+    height: 100%; /* Altezza del 100% dell'elemento genitore */
+    object-fit: cover; /* Riempi l'elemento mantenendo le proporzioni e tagliando l'eccesso */
+}
+
+
+.gallery-item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 51, 102, 0.8); /* Blu scuro con opacità */
+    color: white;
+    margin: 0;
+    padding: 5px 0; /* Aggiunto padding per migliorare leggibilità */
+    text-align: center;
+    font-weight: bold;
+}
+
+.gallery {
+    padding: 2em;
+    text-align: center;
+}
+
+.new-bar {
+    background-color: #003366; /* Stesso colore della barra precedente */
+    text-align: center;
+    padding: 1em 0;
+    color: white; /* Colore del testo bianco */
+}
+
+.bar-content {
+    max-width: 1200px; /* Larghezza massima */
+    margin: 0 auto; /* Centra il contenuto */
+}
+
+.additional-content {
+    display: flex;
+    justify-content: center; /* Centra gli elementi orizzontalmente */
+    align-items: center;
+    margin-top: 1em;
+}
+
+.text {
+    width: calc(50% - 10px);
+    text-align: center; /* Centra il testo */
+}
+
+.image {
+    width: calc(50% - 10px);
+    text-align: center; /* Centra l'immagine */
+}
+
+.image img {
+    margin-top: 20px; /* Spazio sopra l'immagine */
+}
+
+.service-bar {
+    background-color: #85b4e5; /* Colore blu più chiaro */
+    text-align: center;
+    padding: 1em 0;
+    color: white; /* Colore del testo bianco */
+}
+
+.service-bar .bar-content {
+    max-width: 1200px; /* Larghezza massima */
+    margin: 0 auto; /* Centra il contenuto */
+    display: flex; /* Utilizzo di flexbox per il layout */
+}
+
+.service-bar .image {
+    flex: 1; /* Ogni immagine occupa la stessa quantità di spazio */
+    overflow: hidden; /* Nasconde l'eventuale overflow dell'immagine */
+    margin: 0 45px; /* Aggiunge uno spazio di 5px tra le immagini */
+    position: relative; /* Posizionamento relativo per consentire il posizionamento assoluto dei testi */
+}
+
+.service-bar .image img {
+    width: 100%; /* Larghezza delle immagini */
+    height: 100%; /* Altezza delle immagini */
+    display: block;
+}
+
+.service-bar .text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Sfondo trasparente */
+    padding: 10px; /* Spaziatura interna */
+    text-align: center;
+}
+
+.service-bar .image-title,
+.service-bar .image-description {
+    margin: 0;
+    color: white;
+}
+
+.service-bar .image-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.service-bar .image-description {
+    font-size: 12px;
+}
+
+
+
+.footer {
+    background-color: #003366; /* Blu scuro principale */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative; /* Modificato per mantenere il footer sempre visibile */
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end; /* Allineamento a destra per dispositivi mobili */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .column {
+        width: 90%;
+    }
+
+    .gallery-row {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
