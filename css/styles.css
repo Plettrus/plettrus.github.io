@@ -3,284 +3,96 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0; /* Aggiunto per un contrasto maggiore */
-    color: #333;
 }
 
 header {
-    background-color: #003366; /* Blu scuro principale */
-    color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1em;
+    background-color: #4161ac;
+    padding: 10px 20px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+nav {
+    margin-left: auto;
 }
 
 .logo img {
-    height: 50px;
+    height: 100px;
+    margin-right: 20px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px; /* Invertito a sinistra per separare gli elementi */
+    margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: #FF0000; /* Rosso per hover */
+main {
+    padding: 20px;
 }
 
-.hero {
-    position: relative;
-    overflow: hidden;
-    height: 80vh; /* Altezza limitata al 20% dell'altezza dello schermo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000; /* Sfondo nero per il contenitore dell'immagine */
-}
-
-.hero img {
-    width: 100%; /* Larghezza del 100% dell'elemento genitore */
-    height: 100%; /* Altezza del 100% dell'elemento genitore */
-    object-fit: cover; /* Riempi l'elemento mantenendo le proporzioni e tagliando l'eccesso */
-    max-height: 100vh; /* Altezza massima pari all'altezza della viewport */
-}
-
-.services-bar {
-    background-color: #003366; /* Blu scuro */
-    color: white;
+.description {
     text-align: center;
-    padding: 1em 0;
-    font-weight: bold;
+    margin-bottom: 40px;
 }
 
-.main-heading {
-    text-align: center;
-    padding: 2em 0;
+.description h1 {
+    color: #4161ac;
+    font-size: 2em;
 }
 
-.content {
+.description p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer {
     display: flex;
-    justify-content: space-around;
-    padding: 2em;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f1f1f1;
 }
 
-.content .column {
+.footer-services, .footer-info {
     width: 45%;
 }
 
-.gallery-row {
-    display: flex;
-    flex-wrap: wrap; /* Per consentire il wrapping delle immagini */
-    justify-content: flex-start; /* Allinea le immagini a sinistra */
-    margin-bottom: 1em;
+.footer-services h2, .footer-info h2 {
+    color: #4161ac;
 }
 
-.gallery-item {
-    width: calc(25% - 10px); /* Larghezza per contenere esattamente 4 immagini con margine tra loro */
-    margin-right: 10px; /* Aggiunto margine destro tra le immagini */
-    margin-bottom: 10px; /* Aggiunto margine inferiore tra le righe */
-    position: relative;
-    overflow: hidden;
+.footer-services ul {
+    list-style: none;
+    padding: 0;
 }
 
-.gallery-item:last-child {
-    margin-right: 0; /* Rimuove il margine destro per l'ultimo elemento */
+.footer-services ul li {
+    margin-bottom: 10px;
 }
 
-.gallery-item img {
-    width: 100%; /* Larghezza del 100% dell'elemento genitore */
-    height: 100%; /* Altezza del 100% dell'elemento genitore */
-    object-fit: cover; /* Riempi l'elemento mantenendo le proporzioni e tagliando l'eccesso */
-}
-
-
-.gallery-item p {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 51, 102, 0.8); /* Blu scuro con opacità */
-    color: white;
-    margin: 0;
-    padding: 5px 0; /* Aggiunto padding per migliorare leggibilità */
-    text-align: center;
-    font-weight: bold;
-}
-
-.gallery {
-    padding: 2em;
-    text-align: center;
-}
-
-.new-bar {
-    background-color: #003366; /* Stesso colore della barra precedente */
-    text-align: center;
-    padding: 1em 0;
-    color: white; /* Colore del testo bianco */
-    font-weight: bold;
-}
-
-.bar-content {
-    max-width: 1200px; /* Larghezza massima */
-    margin: 0 auto; /* Centra il contenuto */
-}
-
-.additional-content {
-    display: flex;
-    justify-content: center; /* Centra gli elementi orizzontalmente */
-    align-items: center;
-    margin-top: 1em;
-    padding: 0 20px;
-}
-
-.text {
-    width: calc(50% - 10px);
-    text-align: center; /* Centra il testo */
-}
-
-.image {
-    width: calc(50% - 10px);
-    text-align: center; /* Centra l'immagine */
-}
-
-.image img {
-    margin-top: 20px; /* Spazio sopra l'immagine */
-    margin-right: 20px
-}
-
-.service-bar {
-    background-color: #85b4e5; /* Colore blu più chiaro */
-    text-align: center;
-    padding: 1em 0;
-    color: white; /* Colore del testo bianco */
-}
-
-.service-bar .bar-content {
-    max-width: 1200px; /* Larghezza massima */
-    margin: 0 auto; /* Centra il contenuto */
-    display: flex; /* Utilizzo di flexbox per il layout */
-}
-
-.service-bar .image {
-    flex: 1; /* Ogni immagine occupa la stessa quantità di spazio */
-    overflow: hidden; /* Nasconde l'eventuale overflow dell'immagine */
-    margin: 0 45px; /* Aggiunge uno spazio di 5px tra le immagini */
-    position: relative; /* Posizionamento relativo per consentire il posizionamento assoluto dei testi */
-}
-
-.service-bar .image img {
-    width: 100%; /* Larghezza delle immagini */
-    height: 100%; /* Altezza delle immagini */
-    display: block;
-}
-
-.service-bar .text-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo trasparente */
-    padding: 10px; /* Spaziatura interna */
-    text-align: center;
-}
-
-.service-bar .image-title,
-.service-bar .image-description {
-    margin: 0;
-    color: white;
-}
-
-.service-bar .image-title {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.service-bar .image-description {
-    font-size: 12px;
-}
-
-.footer {
-    background-color: #232323; /* Colore tendente al grigio */
-    color: #fff; /* Colore del testo grigio scuro */
-    text-align: center; /* Centra il testo */
-    padding: 2em 0; /* Aggiunto padding sopra e sotto */
-    width: 100%;
-}
-
-.footer .column {
-    display: inline-block; /* Rendi le colonne in linea */
-    width: 30%; /* Larghezza della colonna */
-    vertical-align: top; /* Allinea il contenuto in alto */
-}
-
-.footer h3 {
-    font-weight: bold; /* Rendi i titoli in grassetto */
-    color: #fff; /* Colore del testo grigio scuro */
-    margin-bottom: 10px; /* Aggiungi spazio sotto il titolo */
-}
-
-.footer p {
-    margin: 5px 0; /* Aggiungi spazio tra i paragrafi */
-}
-
-/* Aggiungi stili per le icone dei social */
-.footer .column p {
-    display: inline-block; /* Rendi le icone in linea */
-    margin-right: 10px; /* Aggiungi spazio tra le icone */
-}
-
-.footer .column a {
-    display: inline-block; /* Rendi le icone in linea */
-    margin-right: 10px; /* Aggiungi spazio tra le icone */
-    width: 30px; /* Imposta la larghezza dell'icona */
-    height: 30px; /* Imposta l'altezza dell'icona */
-}
-
-.footer .column a img {
-    width: 100%; /* Imposta la larghezza al 100% */
-    height: 100%; /* Imposta l'altezza al 100% */
-    object-fit: cover; /* Imposta l'immagine per coprire l'area dell'icona */
-}
-
-
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-end; /* Allineamento a destra per dispositivi mobili */
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content .column {
-        width: 90%;
-    }
-
-    .gallery-row {
-        flex-direction: column;
-    }
-
-    .gallery-item {
-        width: 90%;
-        margin-bottom: 10px;
-    }
+.footer-info p {
+    margin: 5px 0;
 }

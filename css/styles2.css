@@ -1,0 +1,618 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Cambiato il colore di sfondo a bianco */
+    padding: 10px 0;
+}
+
+.logo {
+    margin-right: 200px;
+    margin-left: 60px;
+}
+
+nav {
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.logo img {
+    height: 150px;
+    margin-right: 200px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+  position: relative;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #4161ac; /* Cambiato il colore delle scritte */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    color: #4161ac;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-content li a:hover {
+    background-color: #4161ac;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    padding: 0;
+    margin-top: auto;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.description h1 {
+    color: #4161ac;
+    font-size: 2em;
+}
+
+.description p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.content-container {
+    display: flex;
+    align-items: flex-start; /* Allinea gli elementi sulla parte superiore */
+    justify-content: space-between; /* Spazio tra gli elementi */
+}
+
+.certificate-image {
+    text-align: left; /* Allinea l'immagine a destra */
+    margin-top: -60px; /* Sposta l'immagine verso l'alto */
+    margin-left: 70px; /* Aumenta il margine destro per distanziare dal testo */
+}
+
+.certificate-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.description {
+    flex: 1; /* Permette al testo di occupare lo spazio disponibile */
+    margin-right: 20px; /* Aggiunge uno spazio tra il testo e l'immagine */
+    margin-left: 100px;
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+.description h1 {
+    color: #4161ac;
+    font-size: 2em;
+}
+
+.description p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    max-height: 350px; /* Specifica l'altezza massima desiderata */
+    object-fit: cover; /* Assicura che l'immagine si adatti bene all'elemento */
+    margin: 0;
+    padding: 0;
+}
+
+.image-content {
+    flex: 1; /* Permette all'immagine di occupare lo spazio disponibile */
+    height: 400px; /* Imposta un'altezza fissa per il contenitore */
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Assicura che l'immagine riempia completamente il contenitore senza tagliarlo */
+}
+
+.spacer100 {
+	width:100%;
+	height:100px;
+}
+
+.spacer70 {
+	width:70%;
+	height:70px;
+}
+
+.spacer30 {
+	width:30%;
+	height:30px;
+}
+
+.spacer50 {
+	width:50%;
+	height:50px;
+}
+
+
+.squares-section {
+    display: flex;
+    justify-content: center; /* Centra i quadrati orizzontalmente */
+    align-items: center; /* Centra i quadrati verticalmente */
+    margin: 20px 0; /* Spazio sopra e sotto la sezione */
+}
+
+.square {
+    width: 350px; /* Aumenta la larghezza del quadrato */
+    height: 350px; /* Aumenta l'altezza del quadrato */
+    background-color: rgba(65, 97, 172, 1); /* Colore #293966 più scuro con trasparenza */
+    margin: 0 50px; /* Spazio tra i quadrati */
+    display: flex;
+    flex-direction: column; /* Disporre i contenuti in colonna */
+    justify-content: center; /* Centrare i contenuti verticalmente */
+    align-items: center; /* Centrare i contenuti orizzontalmente */
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; /* Arrotondamento degli angoli */
+}
+
+.square img {
+    width: 70px; /* Larghezza dell'icona */
+    height: 70px; /* Altezza dell'icona */
+    margin-bottom: 30px;
+}
+
+.square h3 {
+    color: #ffffff; /* Colore del testo */
+    font-size: 1.8em;
+    margin: 10px 0 10px 0; /* Spazio sopra e sotto il titolo */
+}
+
+.square p {
+    color: #ffffff; /* Colore del testo */
+    font-size: 1.2em;
+    margin: 5;
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 5px; /* Spazio tra il titolo e la galleria */
+    padding: 0;
+}
+
+.services-title h2 {
+    color: #4161ac;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.guarantees-title {
+    text-align: center;
+    margin-bottom: 5px; /* Spazio tra il titolo e la galleria */
+    padding: 0;
+}
+
+.guarantees-title h2 {
+    color: #4161ac;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap; /* Per consentire il wrapping delle immagini */
+    justify-content: flex-start; /* Allinea le immagini a sinistra */
+    margin-bottom: 1em;
+}
+
+.gallery-item {
+    width: calc(25% - 10px); /* Larghezza per contenere esattamente 4 immagini con margine tra loro */
+    margin-right: 10px; /* Aggiunto margine destro tra le immagini */
+    margin-bottom: 10px; /* Aggiunto margine inferiore tra le righe */
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item:last-child {
+    margin-right: 0; /* Rimuove il margine destro per l'ultimo elemento */
+}
+
+.gallery-item img {
+    width: 100%; /* Larghezza del 100% dell'elemento genitore */
+    height: 100%; /* Altezza del 100% dell'elemento genitore */
+    object-fit: cover; /* Riempi l'elemento mantenendo le proporzioni e tagliando l'eccesso */
+}
+
+
+.gallery-item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 51, 102, 0.8); /* Blu scuro con opacità */
+    color: white;
+    margin: 0;
+    padding: 5px 0; /* Aggiunto padding per migliorare leggibilità */
+    text-align: center;
+    font-weight: bold;
+}
+
+.gallery {
+    padding: 2em;
+    text-align: center;
+}
+
+.expert-section {
+    background-color: #4161ac;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.expert-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: white;
+}
+
+.expert-content h2 {
+    font-size: 1.8em;
+    margin: 0;
+    flex: 1;
+}
+
+.contact-button {
+    background-color: white;
+    color: #4161ac;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.contact-button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Altezza della sezione */
+    text-align: center;
+    background-color: #f1f1f1; /* Colore di sfondo */
+    padding: 0 20px; /* Aggiunta di padding orizzontale */
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    color: #4161ac;
+    margin: 0 0 20px 0;
+    width: 80%; /* Riduci la larghezza del titolo */
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+    width: 80%; /* Riduci la larghezza del paragrafo */
+}
+
+.contact-details-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px; /* Aggiungi spaziatura per separare le sezioni */
+    background-color: #ffffff; /* Colore di sfondo */
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.left-section, .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.left-section {
+    margin-top: -40px; /* Sposta la sezione sinistra più in alto */
+}
+
+.left-section img {
+    width: 150px; /* Larghezza dell'immagine aumentata */
+    height: auto; /* Altezza dell'immagine */
+    margin-bottom: 10px; /* Spazio sotto l'immagine */
+}
+
+.divider {
+    height: 400px; /* Altezza della linea */
+    border-left: 2px solid #4161ac;
+    margin: 0 40px; /* Spazio intorno alla linea aumentato */
+}
+
+.left-section p, .right-section p {
+    margin: 10px 0; /* Spazio tra i paragrafi aumentato */
+    font-size: 1.2em; /* Dimensione del testo aumentata */
+}
+
+.right-section {
+    margin-top: 100px; /* Aumenta lo spazio tra il logo e il testo a destra */
+}
+
+.left-section p:first-of-type {
+    font-weight: bold; /* Grassetto per il nome */
+}
+
+.clients-section {
+    background-color: #4161ac;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px auto; /* Centra la sezione */
+    width: 95%; /* Imposta la larghezza al 80% del contenitore */
+}
+
+.clients-section h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.clients-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.client-item {
+    width: calc(33.33% - 20px); /* Larghezza per 3 elementi per riga */
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.client-item img {
+    width: 70px; /* Larghezza dell'icona */
+    height: 70px; /* Altezza dell'icona */
+    margin-bottom: 10px;
+}
+
+.client-item p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.client-item a {
+    text-decoration: none; /* Rimuove la sottolineatura dai link */
+    color: inherit; /* Mantiene il colore del testo */
+}
+
+.client-item:nth-child(4),
+.client-item:nth-child(5) {
+    width: calc(50% - 20px); /* Larghezza per 2 elementi per riga */
+}
+
+.clientspage-section-left {
+    background-color: #4161ac;
+    text-align: center;
+    width: 70%; /* Imposta la larghezza al 75% del contenitore */
+    border-top-right-radius: 20px; /* Arrotondamento bordo in alto a destra */
+    border-bottom-right-radius: 20px; /* Arrotondamento bordo in basso a destra */
+    overflow: hidden;
+    padding: 20px; /* Aggiungi padding per dare spazio interno */
+}
+
+.clientspage-section-left h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.clientspage-container-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.clientpage-item-left {
+    display: flex;
+    justify-content: center; /* Centra il contenitore orizzontalmente */
+    align-items: center;
+    flex-wrap: wrap; /* Per gestire il wrapping su schermi più piccoli */
+    width: 100%;
+}
+
+.clientpage-text-left {
+    flex: 1;
+    max-width: 600px; /* Imposta una larghezza massima per il contenitore del testo */
+    color: #ffffff; /* Imposta il colore del testo a bianco */
+    text-align: left; /* Mantieni il testo allineato a sinistra */
+    padding: 10px; /* Aggiungi padding per dare spazio interno */
+}
+
+.clientpage-image-left {
+    flex-shrink: 0; /* Impedisce che l'immagine si restringa */
+    margin-left: 50px; /* Aggiunge uno spazio tra il testo e l'immagine */
+}
+
+.clientpage-image-left img {
+    width: 100px; /* Imposta una larghezza per l'immagine */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+.clientspage-section-right {
+    background-color: #4161ac;
+    text-align: center;
+    width: 70%; /* Imposta la larghezza al 75% del contenitore */
+    border-top-left-radius: 20px; /* Arrotondamento bordo in alto a destra */
+    border-bottom-left-radius: 20px; /* Arrotondamento bordo in basso a destra */
+    overflow: hidden;
+    padding: 20px; /* Aggiungi padding per dare spazio interno */
+     margin-left: auto; /* Allinea il contenitore a destra */
+}
+
+.clientspage-section-right h2 {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.clientspage-container-right {
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: flex-end;
+}
+
+.clientpage-item-right {
+    display: flex;
+    flex-direction: row-reverse; /* Inverti l'ordine degli elementi */
+    justify-content: flex-start; /* Assicura che il testo rimanga a sinistra */
+    align-items: center;
+    flex-wrap: wrap; /* Per gestire il wrapping su schermi più piccoli */
+    width: 100%;
+}
+
+.clientpage-text-right {
+    flex: 1;
+    max-width: 600px; /* Imposta una larghezza massima per il contenitore del testo */
+    color: #ffffff; /* Imposta il colore del testo a bianco */
+    text-align: left; /* Mantieni il testo allineato a sinistra */
+    padding: 10px; /* Aggiungi padding per dare spazio interno */
+}
+
+.clientpage-image-right {
+    flex-shrink: 0; /* Impedisce che l'immagine si restringa */
+}
+
+.clientpage-image-right img {
+    width: 100px; /* Imposta una larghezza per l'immagine */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    margin-right: 50px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.footer-services, .footer-info, .footer-name{
+  width: calc(25% - 20px); /* Imposta la larghezza al 25% del contenitore, sottraendo il padding */
+  padding: 0 20px; /* Aggiunge padding solo sui lati */
+  text-align: left; /* Allinea il testo al centro */
+}
+
+.footer-social {
+  width: calc(25% - 20px); /* Imposta la larghezza al 25% del contenitore, sottraendo il padding */
+  padding: 0 20px; /* Aggiunge padding solo sui lati */
+  text-align: left; /* Allinea il testo al centro */
+  margin-left: 100px;
+}
+
+.footer-services h2, .footer-info h2, .footer-name h2, .footer-social h2{
+    color: #4161ac;
+}
+
+.footer-services ul, .footer.info ul, .footer-name ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-services ul li, .footer-name ul li {
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+  display: inline-block; /* Rendi le icone in linea */
+  margin-right: 10px; /* Aggiungi spazio tra le icone */
+  width: 30px; /* Imposta la larghezza dell'icona */
+  height: 30px; /* Imposta l'altezza dell'icona */
+}
+
+.footer-social a img {
+    width: 100%; /* Imposta la larghezza al 100% */
+    height: 100%; /* Imposta l'altezza al 100% */
+    object-fit: cover; /* Imposta l'immagine per coprire l'area dell'icona */
+}

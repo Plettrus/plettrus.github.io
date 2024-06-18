@@ -1,3 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Sito web pronto!');
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("Sito caricato correttamente.");
+
 });
