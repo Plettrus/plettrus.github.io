@@ -639,12 +639,19 @@ footer {
       max-width: 90%; /* Massima larghezza del messaggio */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
   }
+
+  .mobile-message img {
+    max-width: 100%; /* Dimensione massima dell'immagine */
+    height: auto; /* Altezza automatica per mantenere l'aspetto proporzionato */
+    margin-bottom: 10px; /* Spazio inferiore dell'immagine rispetto al testo */
+}
     body {
         overflow: hidden; /* Impedisce lo scrolling */
     }
     header, main, footer {
         display: none; /* Nasconde header, main e footer */
     }
+}
 
 @media (min-width: 798px) {
   .mobile-message{
