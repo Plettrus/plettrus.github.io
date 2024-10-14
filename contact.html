@@ -3,109 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti - SAIM Pest Management</title>
-    <link rel="stylesheet" href="css/styles2.css">
+    <title>SAIM Pest Management</title>
+    <!-- Aggiunta di Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo_Name.png" alt="Logo Azienda">
+    <header class="container-fluid bg-white py-3">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <img src="images/logo_Name.png" alt="Logo Azienda" class="img-fluid" style="height: 100px;">
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span> <!-- Icona dell'hamburger -->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">Chi Siamo</a></li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Servizi
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="derattizzazione.html">Derattizzazione</a></li>
+                        <li><a class="dropdown-item" href="disinfestazione.html">Disinfestazione</a></li>
+                        <li><a class="dropdown-item" href="sanificazione.html">Sanificazione</a></li>
+                        <li><a class="dropdown-item" href="monitoraggio.html">Controllo Integrato</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item"><a href="whom.html" class="nav-link">Per chi</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contatti</a></li>
+                  </ul>
+                </div>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Chi Siamo</a></li>
-                <li class="dropdown">
-                  <a href="#">Servizi</a>
-                  <ul class="dropdown-content">
-                    <li><a href="derattizzazione.html">Derattizzazione</a></li>
-                    <li><a href="disinfestazione.html">Disinfestazione</a></li>
-                    <li><a href="sanificazione.html">Sanificazione</a></li>
-                    <li><a href="monitoraggio.html">Controllo Integrato</a></li>
-                 </ul>
-           </li>
-                <li><a href="whom.html">Per chi</a></li>
-                <li><a href="contact.html">Contatti</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <section class="contact-section">
-            <h1>CONSULENTI AL TUO SERVIZIO</h1>
-            <p>Siamo qui per te. Il team di consulenti esperti di SAIM è pronto a rispondere alle tue domande, offrirti consulenza personalizzata e guidarti verso le soluzioni più efficaci per le tue esigenze di sanificazione, disinfezione e controllo degli infestanti.
-              Contattaci oggi stesso per un supporto professionale e orientato al risultato.
-            </p>
-        </section>
 
-        <section class="contact-details-section">
-    <div class="contact-details">
-        <div class="left-section">
+    <main>
+      <section class="contact-section">
+          <h1>CONSULENTI AL TUO SERVIZIO</h1>
+          <p>Siamo qui per te. Il team di consulenti esperti di SAIM è pronto a rispondere alle tue domande, offrirti consulenza personalizzata e guidarti verso le soluzioni più efficaci per le tue esigenze di sanificazione, disinfezione e controllo degli infestanti.
+            Contattaci oggi stesso per un supporto professionale e orientato al risultato.
+          </p>
+      </section>
+
+      <section class="contact-details-section">
+        <div class="contact-details">
+          <div class="left-section">
             <img src="images/logo_Name.png" alt="Logo Azienda">
             <p>SAIM Pest Management</p>
             <p>Boscoreale - Via Sanza, 25 </p>
             <p>P.iva: 10544871212</p>
-        </div>
+          </div>
+
         <div class="divider"></div>
+
         <div class="right-section">
-            <p>Telefono: 081.18635546</p>
-            <p>Whatsapp: +39 339.1165449</p>
-            <p>Email: salvatoreborriello.saim@gmail.com</p>
+          <p>Telefono: 081.18635546</p>
+          <p>Whatsapp: +39 339.1165449</p>
+          <p>Email: salvatoreborriello.saim@gmail.com</p>
         </div>
-    </div>
-</section>
-    </main>
-    <footer>
+      </div>
+    </section>
+  </main>
 
-        <div class="footer-name">
-          <h2> SAIM </h2>
-          <ul>
-              <li>Via Sanza, 25</li>
-              <li>Boscoreale (NA) - 80041 </li>
-              <li>P.iva 10544871212 </li>
-              <li>Copyright&copy; SAIM </li>
-              <li>Tutti i diritti sono riservati </li>
-          </ul>
-        </div>
-        <div class="footer-services">
-            <h2>Servizi Offerti</h2>
-            <ul>
-                <li><a href="derattizzazione.html">Derattizzazione</a></li>
-                <li><a href="disinfestazione.html">Disinfestazione</a></li>
-                <li><a href="sanificazione.html">Sanificazione</a></li>
-                <li><a href="monitoraggio.html">Controllo Integrato</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-services">
-            <h2>Per Chi</h2>
-            <ul>
-                <li><a href="whom.html">Aziende</a></li>
-                <li><a href="whom.html">Aziende Alimentari</a></li>
-                <li><a href="whom.html">Allevamenti Zootecnici</a></li>
-                <li><a href="whom.html">Enti Pubblici/Sanitari</a></li>
-                <li><a href="whom.html">Privati</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-info">
-            <h2>Contatti</h2>
-            <p>Email: salvatoreborriello.saim@gmail.com</p>
-            <p>Whatsapp: +39 339.1165449</p>
-            <p>Telefono: 081.18635546</p>
-        </div>
-
-        <div class="footer-social">
-          <h2>SEGUICI SUI SOCIAL</h2>
-            <a href="https://www.facebook.com/profile.php?id=61560507741361">
-              <img src="images/facebook.jpg" alt="Facebook">
-          </a>
-          <a href="https://www.instagram.com/">
-              <img src="images/instagram.jpg" alt="Instagram">
-          </a>
-          <a href="https://www.linkedin.com/company/saim-pest-management/">
-              <img src="images/linkedin.jpg" alt="LinkedIn">
-          </a>
+    <footer class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>SAIM</h2>
+                    <ul class="list-unstyled">
+                        <li>Via Sanza, 25</li>
+                        <li>Boscoreale (NA) - 80041</li>
+                        <li>P.iva 10544871212</li>
+                        <li>&copy; SAIM Tutti i diritti riservati</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Servizi Offerti</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="derattizzazione.html">Derattizzazione</a></li>
+                        <li><a href="disinfestazione.html">Disinfestazione</a></li>
+                        <li><a href="sanificazione.html">Sanificazione</a></li>
+                        <li><a href="monitoraggio.html">Controllo Integrato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Per Chi</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="whom.html">Aziende</a></li>
+                        <li><a href="whom.html">Aziende Alimentari</a></li>
+                        <li><a href="whom.html">Allevamenti Zootecnici</a></li>
+                        <li><a href="whom.html">Enti Pubblici/Sanitari</a></li>
+                        <li><a href="whom.html">Privati</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>Contatti</h2>
+                    <p>Email: salvatoreborriello.saim@gmail.com</p>
+                    <p>Whatsapp: +39 339.1165449</p>
+                    <p>Telefono: 081.18635546</p>
+                    <div class="d-flex">
+                        <a href="https://www.facebook.com/" class="me-3"><img src="images/facebook.jpg" alt="Facebook" class="img-fluid" style="width: 40px;"></a>
+                        <a href="https://www.instagram.com/" class="me-3"><img src="images/instagram.jpg" alt="Instagram" class="img-fluid" style="width: 40px;"></a>
+                        <a href="https://www.linkedin.com/" class="me-3"><img src="images/linkedin.jpg" alt="LinkedIn" class="img-fluid" style="width: 40px;"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
